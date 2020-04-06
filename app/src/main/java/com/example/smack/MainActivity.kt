@@ -16,10 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-        val toggle = ActionBarDrawerToggle(
-            this,
-            drawer_layout,
-            toolbar,null ,null  )
+        val toggle = ActionBarDrawerToggle(this,drawer_layout,toolbar,0,0)
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
     }
