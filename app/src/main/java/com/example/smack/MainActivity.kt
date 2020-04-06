@@ -1,5 +1,6 @@
 package com.example.smack
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -30,13 +31,15 @@ class MainActivity : AppCompatActivity() {
         super.onBackPressed()
      }
     }
+    //é assim que se faz com que o botão vá para outro layout
     fun loginBtnNavClicked(view: View){
-
+        val loginInten = Intent(this,LoginActivity::class.java)
+        startActivity(loginInten)
     }
     fun addChannelChilked(view:View){
 
     }
     fun sendMessageBtnCLick(view:View){
-        
+
     }
 }
