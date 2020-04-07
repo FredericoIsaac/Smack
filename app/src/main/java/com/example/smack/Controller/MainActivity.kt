@@ -1,4 +1,4 @@
-package com.example.smack
+package com.example.smack.Controller
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import com.example.smack.R
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -30,7 +31,8 @@ class MainActivity : AppCompatActivity() {
     }
     //é assim que se faz com que o botão vá para outro layout
     fun loginBtnNavClicked(view: View){
-        val loginInten = Intent(this,LoginActivity::class.java)
+        val loginInten = Intent(this,
+            LoginActivity::class.java)
         startActivity(loginInten)
     }
     fun addChannelChilked(view:View){
